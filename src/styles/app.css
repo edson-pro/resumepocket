@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-900 text-gray-400 scroll-smooth;
+}
+
+@font-face {
+  font-family: Sofia;
+  font-weight: 500;
+  src: url("/fonts/Sofia-Pro-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Sofia;
+  font-weight: 600;
+  src: local("SofiaMedium"),
+    url("/fonts/Sofia-Pro-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Sofia;
+  font-weight: 700;
+  src: local("SofiaBold"), url("/fonts/Sofia-Pro-Bold.otf") format("opentype");
+}
