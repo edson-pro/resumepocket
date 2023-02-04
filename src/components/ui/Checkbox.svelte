@@ -1,5 +1,5 @@
 <script lang="ts">
-  export let checked;
+  export let checked: any = false;
   export let label;
 </script>
 

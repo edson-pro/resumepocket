@@ -11,10 +11,7 @@
     { title: "Help", path: "/help" },
   ];
 
-  const user = {
-    name: "ntwali edson",
-    id: "122",
-  };
+  const user = null;
 </script>
 
 <nav

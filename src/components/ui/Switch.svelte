@@ -7,20 +7,20 @@
 
 <label
   for={"label || title"}
-  class="flex cursor-pointer my-5 select-none items-center"
+  class="flex cursor-pointer justify-between w-full my-0 select-none items-center"
 >
   {#if (title || subTitle) && !label}
     <div class="flex flex-col mr-10">
       {#if title}
         <span
-          class="text-[15px] capitalize mb-3 text-gray-700 dark:text-gray-300 font-semibold"
+          class="text-[15px] capitalize mb-3 text-gray-700 dark:text-gray-200 font-semibold"
         >
           {title}
         </span>
       {/if}
 
       {#if subTitle}
-        <span class="text-sm text-gray-500 font-medium dark:text-gray-400"
+        <span class="text-sm text-gray-500 font-normal dark:text-gray-400"
           >{subTitle}</span
         >
       {/if}

@@ -28,6 +28,32 @@ body {
   src: local("SofiaBold"), url("/fonts/Sofia-Pro-Bold.otf") format("opentype");
 }
 
+/* card */
+
+.card {
+  @apply bg-gray-800 bg-opacity-75 rounded-md;
+}
+.card-header {
+  @apply px-5 py-3 border-b border-gray-700 border-opacity-30;
+}
+.card-title {
+  @apply text-white;
+}
+.card-body {
+  @apply p-5;
+}
+.card-footer {
+  @apply px-4 py-2 border-t border-gray-700 border-opacity-30;
+}
+
+/* or */
+.or:after,
+.or:before {
+  content: "";
+  @apply w-1/2 bg-gray-700 bg-opacity-40 block;
+  height: 1px;
+}
+
 /* datepicker */
 
 .date-time-field input {

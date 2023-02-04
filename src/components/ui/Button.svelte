@@ -12,7 +12,7 @@
   export let rounded: string = "sm";
   export let color: string = "primary";
   export let variant: string = "filled";
-  export let click;
+  export let click = null;
 
   $: roundedClass = {
     sm: "rounded-[3px]",

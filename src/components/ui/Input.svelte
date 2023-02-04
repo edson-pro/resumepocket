@@ -1,8 +1,8 @@
 <script lang="ts">
   import Loader from "./Loader.svelte";
   import { EyeIcon, EyeOffIcon } from "svelte-feather-icons";
-  export let placeholder: string;
-  export let value: string;
+  export let placeholder: string = "";
+  export let value: string = "";
   export let type: string = "text";
   export let label: string = "";
   export let leftIcon: any = null;
@@ -39,7 +39,7 @@
   }[size];
 
   $: globalClass =
-    "outline-none mb-[2px] max-w-xl" +
+    "outline-none mb-[2px] max-w-4xl" +
     ` ${disabled ? "pointer-events-none opacity-70" : ""} ` +
     (error
       ? " placeholder-red-500 text-red-500"
