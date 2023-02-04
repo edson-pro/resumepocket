@@ -10,6 +10,9 @@ module.exports = {
         primary: "#5662f6",
         primaryLight: "#7d86f7",
       },
+      fontSize: {
+        sm: "16px",
+      },
       screens: {
         xl: { max: "1279px" },
         lg: { max: "1023px" },

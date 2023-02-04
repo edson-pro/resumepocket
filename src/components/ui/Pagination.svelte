@@ -4,8 +4,7 @@
     ChevronRightIcon,
     MoreHorizontalIcon,
   } from "svelte-feather-icons";
-  import { onMount } from "svelte";
-  import handlePaginationSlice from "../utils/handlePaginationSlice";
+  import handlePaginationSlice from "@/utils/handlePaginationSlice";
 
   export let page: number = 1;
   export let total: number = 50;
@@ -14,7 +13,7 @@
 
   $: currentPageSize = size;
 
-  let currentPage = page;
+  export let currentPage = 1;
   $: pageCount = Math.max(1, Math.ceil(total / currentPageSize));
   $: isFirstPage = currentPage === 1;
   $: isLastPage = currentPage === pageCount;

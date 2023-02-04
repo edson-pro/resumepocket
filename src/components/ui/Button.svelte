@@ -15,7 +15,7 @@
   export let click;
 
   $: roundedClass = {
-    sm: "rounded-sm",
+    sm: "rounded-[3px]",
     md: "rounded-md",
     lg: "rounded-lg",
     full: "rounded-full",
@@ -33,7 +33,7 @@
 
   $: sizeClass = {
     sm: "px-3 py-[9px]  leading-4 font-medium  text-[13px] ",
-    md: "px-4 py-[9px] font-medium text-[15px]",
+    md: "px-4 py-[7px] font-medium text-[15px]",
     lg: "px-5 py-3 font-medium text-base",
   }[size];
 

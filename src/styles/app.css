@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  color-scheme: dark;
+}
 body {
   @apply bg-gray-900 text-gray-400 scroll-smooth;
 }
@@ -23,4 +26,31 @@ body {
   font-family: Sofia;
   font-weight: 700;
   src: local("SofiaBold"), url("/fonts/Sofia-Pro-Bold.otf") format("opentype");
+}
+
+/* datepicker */
+
+.date-time-field input {
+  @apply !bg-gray-800 !w-full !py-2 !px-3 !text-gray-400 !border !border-gray-700 !border-opacity-75 !text-[14.5px] !font-sans !font-medium outline-none focus:!shadow-none focus:!border-primary;
+}
+.date-time-field {
+  @apply !w-full;
+}
+:root {
+  --date-picker-background: #1b1e27;
+  --date-picker-foreground: #f7f7f7;
+}
+
+/* select  */
+.svelte-select {
+  @apply !bg-gray-800 !border !border-gray-700 !border-opacity-75 !rounded-[4px] !text-[14.5px] !cursor-pointer;
+}
+.svelte-select-list {
+  @apply !bg-gray-800  !border !border-gray-700 !overflow-hidden;
+}
+.svelte-select .value-container input {
+  @apply !cursor-pointer  !text-[15px] !text-gray-300;
+}
+.svelte-select .indicators .icon {
+  @apply !w-[18px] !h-[18px] !mr-3;
 }
