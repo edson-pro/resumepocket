@@ -14,7 +14,7 @@
     class="flex justify-between items-center py-6 mx-auto max-w-6xl px-3 sm:flex-col sm:gap-8"
   >
     <div>
-      <p>&copy; 2023 Enhancv. All Rights Reserved.</p>
+      <p>&copy; 2023 Resumepocket. All Rights Reserved.</p>
     </div>
     <ul class="flex items-center gap-4 sm:flex-wrap sm:justify-center">
       {#each links as link, i}

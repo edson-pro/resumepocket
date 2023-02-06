@@ -2,6 +2,8 @@
   import Button from "../../components/ui/Button.svelte";
   import Empty from "../../components/ui/Empty.svelte";
   import { PlusSquareIcon } from "svelte-feather-icons";
+  import { page } from "$app/stores";
+  import { goto } from "$app/navigation";
 
   let active = "all";
 </script>
@@ -53,7 +55,12 @@
           class="flex px-3 items-center border-b border-gray-800 justify-between py-2"
         >
           <h4 class="font-medium text-white text-base">Your Documents</h4>
-          <Button click={() => {}} rightIcon={PlusSquareIcon}>
+          <Button
+            click={() => {
+              goto("/dashboard/resumes/12/edit");
+            }}
+            rightIcon={PlusSquareIcon}
+          >
             Create new
           </Button>
         </div>
@@ -87,8 +94,10 @@
         <div class="p-4">
           <Empty
             action={{
-              title: "create new resume",
-              click: () => {},
+              title: "Create new resume",
+              click: () => {
+                goto("/dashboard/resumes/12/edit");
+              },
             }}
             image="/vectors/resume_2.svg"
             title="Craft your future with a well-written resume"

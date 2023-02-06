@@ -20,7 +20,7 @@
         ? " dark:border-red-600 border-red-500"
         : "dark:border-gray-700 dark:border-opacity-70 border-gray-300"),
     filled:
-      " block w-full sm:text-sm bg-opacity-50 border-opacity-50  border dark:bg-gray-800 dark:bg-gray-800 dark:border-gray-800 bg-gray-200  border-gray-200 ",
+      " block w-full sm:text-sm bg-opacity-50 dark:bg-opacity-75 border-opacity-50 dark:border-opacity-25  border dark:bg-gray-800 dark:border-gray-800 bg-gray-200  border-gray-200 ",
     unstyled: " block w-full sm:text-sm  bg-transparent border-transparent ",
   }[variant];
 
@@ -46,7 +46,7 @@
       : "dark:text-gray-300 text-gray-500");
 
   $: globalLabelClass =
-    "block mb-2  dark:text-gray-200 text-[14px] font-medium dark:text-gray-300 text-gray-700" +
+    "block mb-2  dark:text-gray-200 text-[14px] font-medium dark:text-gray-400 text-gray-700" +
     ` ${disabled ? "pointer-events-none opacity-70" : ""}`;
 
   let showPassword = false;

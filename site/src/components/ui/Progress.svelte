@@ -11,11 +11,12 @@
     md: "rounded-[8px]",
     lg: "rounded-[16px]",
     xl: "rounded-[32px]",
+    none: "rounded-[0px]",
   }[rounded];
 
   $: sizeClass = {
     xs: "h-[3px]",
-    sm: "h-[5px]",
+    sm: "h-[4.5px]",
     md: "h-[8px]",
     lg: "h-[12px]",
     xl: "h-[16px]",

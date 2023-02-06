@@ -7,6 +7,7 @@
   export let error: string = "";
   export let disabled: boolean = false;
   export let size: string = "md";
+  export let rows: number = 3;
   export let rounded: string = "sm";
   export let variant: string = "default";
 
@@ -17,7 +18,7 @@
         ? " border-red-500"
         : "dark:border-gray-700 dark:border-opacity-70 border-gray-300"),
     filled:
-      " block w-full sm:text-sm bg-opacity-50 border-opacity-50  border dark:bg-gray-800 dark:bg-gray-800 dark:border-gray-800 bg-gray-200  border-gray-200 ",
+      " block w-full sm:text-sm bg-opacity-50 dark:bg-opacity-75 border-opacity-50  border dark:bg-gray-800 dark:bg-gray-800 dark:border-gray-800 bg-gray-200  border-gray-200 ",
     unstyled: " block w-full sm:text-sm  bg-transparent border-transparent ",
   }[variant];
 
@@ -36,7 +37,7 @@
   }[size];
 
   $: globalClass =
-    "outline-none mt-2 mb-[2px] max-w-xl" +
+    "outline-none mt-2 mb-[2px] max-w-4xl" +
     ` ${disabled ? "pointer-events-none opacity-70" : ""} ` +
     (error
       ? " placeholder-red-500 text-red-500"
@@ -54,7 +55,7 @@
   <textarea
     style:resize="vertical"
     {...$$props}
-    rows="3"
+    {rows}
     {placeholder}
     class="{variantClass} {roundedClass} {sizeClass} {globalClass}"
   />
