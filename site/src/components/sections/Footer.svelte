@@ -1,11 +1,11 @@
 <script>
   const links = [
-    { title: "Templates", path: "/templates" },
-    { title: "Upgrade", path: "/upgrade" },
-    { title: "Terms", path: "/terms" },
-    { title: "Privacy", path: "/privacy" },
-    { title: "About", path: "/about" },
-    { title: "Blog", path: "/blog" },
+    { title: "Templates", path: "#" },
+    { title: "Upgrade", path: "#" },
+    { title: "Terms", path: "#" },
+    { title: "Privacy", path: "#" },
+    { title: "About", path: "#" },
+    { title: "Blog", path: "#" },
   ];
 </script>
 
