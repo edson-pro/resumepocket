@@ -1,4 +1,5 @@
 <script>
+  import AuthModals from "../components/others/AuthModals.svelte";
   import Footer from "../components/sections/Footer.svelte";
   import Navbar from "../components/sections/Navbar.svelte";
   import "./styles.css";
@@ -11,6 +12,8 @@
   </div>
   <Footer />
 </div>
+
+<AuthModals />
 
 <style>
 </style>

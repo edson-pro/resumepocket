@@ -36,7 +36,7 @@
 </svelte:head>
 
 <div class=" max-w-6xl px-3 mx-auto">
-  <div class="py-12 grid grid-cols-2 gap-4">
+  <div class="pt-8 pb-12 grid grid-cols-2 gap-4">
     <div class="">
       <span class="text-primary capitalize my-3 block">AI Resume Builder.</span>
       <h4 class="font-semibold text-3xl my-4 leading-10 text-white">

@@ -4,7 +4,7 @@
   export let dark = false;
   export let fade = false;
   export let zIndex = 100;
-  export let click = null;
+  export let click: any = null;
 </script>
 
 <div

@@ -6,11 +6,13 @@
   import Checkbox from "../ui/Checkbox.svelte";
   import Modal from "../ui/Modal.svelte";
   import Google from "../vectors/Google.svelte";
+  import { modal } from "../../stores/auth-modals";
+
   export let open: boolean = false;
   export let close: any = null;
 </script>
 
-<Modal size="md" {open}>
+<Modal {close} size="md" {open}>
   <div slot="body" class="px-1">
     <div class="mt-5 mb-4 flex flex-col justify-center items-center">
       <h4 class="text-[20px] text-white title mb-1 font-semibold">
@@ -60,7 +62,13 @@
         class="mt-3 flex items-center text-sm justify-center text-gray-400 font-medium gap-2"
       >
         <span>Already have an account?</span>
-        <a class="" href="/"><span class="text-primaryLight">Sign in.</span></a>
+        <a
+          href={null}
+          on:click={() => {
+            $modal.open = true;
+            $modal.show = "login";
+          }}><span class="text-primaryLight cursor-pointer">Sign in.</span></a
+        >
       </div>
     </div>
   </div>

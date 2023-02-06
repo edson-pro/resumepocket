@@ -1,8 +1,9 @@
-<script>
+<script lang="ts">
   import Avatar from "../ui/Avatar.svelte";
   import Button from "../ui/Button.svelte";
   import Logo from "../vectors/logo.svelte";
   import Upgrade from "../vectors/Upgrade.svelte";
+  import { modal } from "../../stores/auth-modals";
 
   const links = [
     { title: "Dashboard", path: "/dashboard" },
@@ -11,7 +12,7 @@
     { title: "Help", path: "#" },
   ];
 
-  const user = null;
+  const user: any = null;
 </script>
 
 <nav
@@ -37,8 +38,19 @@
     </div>
     {#if !user}
       <div class="flex items-center gap-4">
-        <Button variant="subtle" click={() => {}}>Sign in</Button>
-        <Button click={() => {}}>Start for free</Button>
+        <Button
+          variant="subtle"
+          click={() => {
+            $modal.open = true;
+            $modal.show = "login";
+          }}>Sign in</Button
+        >
+        <Button
+          click={() => {
+            $modal.open = true;
+            $modal.show = "register";
+          }}>Start for free</Button
+        >
       </div>
     {:else}
       <div class="flex items-center gap-6">
