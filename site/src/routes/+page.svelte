@@ -43,7 +43,7 @@
         Start writing your success story with a standout resume.
       </h4>
       <p class="leading-8 text-[16px]">
-        Create a beautiful resume quickly with the help of artificial
+        Create aaa beautiful resume quickly with the help of artificial
         intelligence and our customizable templates. Impress your future
         employer with a perfect resume created in minutes.
       </p>
